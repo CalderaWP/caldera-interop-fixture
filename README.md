@@ -7,7 +7,7 @@ Auto-magic tests for [caldera-interop Interoperable Servies](https://github.com/
 * Writing all those tests takes to long.
 
 ## Install
-`composer require calderawp/caldera-interop-fixture`
+`composer require calderawp/caldera-interop-fixture --dev`
 
 ## Requires
 * PHP 7.1
@@ -126,8 +126,6 @@ class MyInteropTest extends UnitTestCase
 ### Complete Example
 See Tests/example for an example interoperable set that is tested in by the test in tests/Unit/HelloInteropTest. This example has two properites. Both with custom validation logic. 64 assertions are generated for this set.
 ## Development
-
-
 ### Install
 Requires git and Composer
 
