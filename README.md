@@ -1,8 +1,6 @@
 [![Build Status](https://travis-ci.org/calderawp/caldera-interop-fixture.svg?branch=master)](https://travis-ci.org/calderawp/caldera-interop-fixture)
 
->This is an example of how a Caldera Forms integration will work soon. See the [Docs](DOCS.md) for information on how to use this.
 
-@TODO basic description
 ## Why?
 @TODO Explain why this is needed
 
@@ -16,10 +14,9 @@
 * PHP 7.1
 
 ## Status
-EXPERIMENTAL/ALPHA/BETA/ETC
+BETA
 ## Usage
 @TODO Examples
-
 
 
 ## Development
@@ -34,7 +31,8 @@ Requires git and Composer
 Coding Standard: Caldera (psr2 with tabs). Enforces using phpcs.
 
 ### Testing
-Tests are divided between unit tests and //@TODO explain more//
+Tests are divided between unit tests and currently no other types of tests.
+
 #### Install
 All testing dependencies are installed with composer.
 #### Use

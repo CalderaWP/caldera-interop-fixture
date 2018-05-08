@@ -7,10 +7,13 @@ use calderawp\HelloExtension\Entities\Hello;
 use calderawp\HelloExtension\Collections\Hellos as HelloCollection;
 use calderawp\HelloExtension\HelloInteropService;
 use calderawp\HelloExtension\Models\Hello as HelloModel;
+use calderawp\InteropFixture\Entities\PropData;
+use calderawp\InteropFixture\InteropFixture;
+use calderawp\InteropFixture\Traits\TestsInterops;
 
 class HelloInteropTest extends UnitTestCase
 {
-
+	use TestsInterops;
 
 	/**
 	 * Test Entity
@@ -18,18 +21,9 @@ class HelloInteropTest extends UnitTestCase
 	public function testEntity()
 	{
 		$fixture = $this->createFixture();
-
-		$entityExpects = $fixture->getEntityExpects();
-		$entityArrays = $fixture->getEntityArrays();
-		$this->assertEquals(count($entityArrays), count($entityExpects));
-		foreach ($entityArrays as $setIndex => $entityArray) {
-			$entity = Hello::fromArray($entityArray);
-			$entity->setId($entityArray['id']);
-			$expect =  $entityExpects[$setIndex];
-			$this->checkEntity($expect, $entity, $fixture);
-		}
+		$entityName = Hello::class;
+		$this->checkEntityWithFixture($fixture, $entityName);
 	}
-
 
 	/**
 	 * Test hello model
@@ -37,14 +31,8 @@ class HelloInteropTest extends UnitTestCase
 	public function testModel()
 	{
 		$fixture = $this->createFixture();
-		$entityExpects = $fixture->getEntityExpects();
-		$entityArrays = $fixture->getEntityArrays();
-		foreach ($entityArrays as $setIndex => $entityArray) {
-			$model = HelloModel::fromArray($entityArray);
-			$model->setId($entityArray['id']);
-			$expect =  $entityExpects[$setIndex];
-			$this->checkEntity($expect, $model->toEntity(), $fixture);
-		}
+		$modelName = HelloModel::class;
+		$this->checkModelWithFixture($fixture, $modelName);
 	}
 
 	/**
@@ -53,21 +41,10 @@ class HelloInteropTest extends UnitTestCase
 	public function testCollection()
 	{
 		$fixture = $this->createFixture();
-		$entityArrays = $fixture->getEntityArrays();
-		$collection = new HelloCollection();
-		foreach ($entityArrays as $setIndex => $entityArray) {
-			$entity = Hello::fromArray($entityArray);
-			$entity->setId($entityArray['id']);
-			$collection->addHello($entity);
-		}
-
-		foreach ($entityArrays as $entityA) {
-			$this->assertTrue($collection->has($entityA['id']));
-			$entity = $collection->getHello($entityA['id']);
-			$this->assertEquals(Hello::fromArray($entityA), $entity);
-		}
+		$entityName = Hello::class;
+		$collectionName = HelloCollection::class;
+		$this->checkCollectionWithFixture($fixture, $entityName, $collectionName);
 	}
-
 
 
 	/**
@@ -75,56 +52,9 @@ class HelloInteropTest extends UnitTestCase
 	 */
 	protected function createFixture(): InteropFixture
 	{
-		$propData = [
-			'who' => [
-				'values' => [
-					[
-						'value' => InteropFixture::NO_ARG,
-						'expect' => 'Roy'
-					],
-					[
-						'value' => 'Mike',
-						'expect' => 'Mike'
-					],
-					[
-						'value' => 'mike',
-						'expect' => 'Mike'
-					],
-				],
-
-
-			],
-			'triangle' => [
-				'values' => [
-					[
-						'value' => true,
-						'expect' => true
-					],
-					[
-						'value' => false,
-						'expect' => false
-					],
-					[
-						'value' => 1,
-						'expect' => true
-					],
-					[
-						'value' => 0,
-						'expect' => false
-					],
-					[
-						'value' => 'true',
-						'expect' => true
-					],
-					[
-						'value' => 'false',
-						'expect' => false
-					],
-				]
-			]
-		];
-
-		$fixture = new InteropFixture($propData);
+		$fixture = new InteropFixture(
+			PropData::fromArray($this->helloFixturePropData())
+		);
 		return $fixture;
 	}
 

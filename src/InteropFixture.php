@@ -1,7 +1,9 @@
 <?php
 
 
-namespace calderawp\InteropFixture\Tests\Unit;
+namespace calderawp\InteropFixture;
+
+use calderawp\InteropFixture\Entities\PropData;
 
 class InteropFixture
 {
@@ -18,9 +20,14 @@ class InteropFixture
 	/** @var array */
 	protected $propNames = [];
 
-	public function __construct(array  $propData)
+	/**
+	 * InteropFixture constructor.
+	 * @param PropData $propData PropData entity
+	 */
+	public function __construct(PropData  $propData)
 	{
-		$this->propData = $propData;
+		//Shimmed back to an array beacuse it is not array like or itterable yet.
+		$this->propData = $propData->toArray();
 		$this->setProps();
 	}
 

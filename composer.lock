@@ -54,12 +54,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/CalderaWP/caldera-interop.git",
-                "reference": "bf46885c2cb7f9179a0cc4e49456078de9ba4aef"
+                "reference": "35d771e7144b5019ce559f7b9c1228a445774f77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CalderaWP/caldera-interop/zipball/bf46885c2cb7f9179a0cc4e49456078de9ba4aef",
-                "reference": "bf46885c2cb7f9179a0cc4e49456078de9ba4aef",
+                "url": "https://api.github.com/repos/CalderaWP/caldera-interop/zipball/35d771e7144b5019ce559f7b9c1228a445774f77",
+                "reference": "35d771e7144b5019ce559f7b9c1228a445774f77",
                 "shasum": ""
             },
             "require": {
@@ -90,7 +90,7 @@
                     "email": "josh@calderawp.com"
                 }
             ],
-            "time": "2018-05-08T19:18:37+00:00"
+            "time": "2018-05-08T20:09:19+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
