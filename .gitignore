@@ -1,0 +1,13 @@
+vendor
+.idea/
+node_modules
+.DS_Store
+Thumbs.db
+wp-cli.local.yml
+node_modules/
+vendor/
+*.sql
+*.tar.gz
+*.zip
+.php_cs.cache
+Tests/plugins/

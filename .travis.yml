@@ -1,0 +1,64 @@
+# Give sudo to environment
+sudo: required
+
+# Make Docker available inside the container
+services:
+  - docker
+
+# Use the PHP environment
+language: php
+
+# Don't send notifications via email, that's annoying
+notifications:
+  email:
+    on_success: never
+    on_failure: never
+
+# Trigger only on master -- we'll add Github pull requests in settings
+branches:
+  only:
+    - master
+    - develop
+# Extras
+addons:
+  # Make Github and Gitlab and Bitbucket known hosts so we can clone from them
+  ssh_known_hosts:
+  - github.com
+  - gitlab.com
+  - bitbucket.com
+
+# Cache composer dependencies
+cache:
+  directories:
+    - vendor
+    - $HOME/.composer/cache
+
+# Build these combinations of PHP
+matrix:
+  include:
+    - php: 7.0
+    - php: 7.1
+    - php: 7.2
+
+
+# Setup environment
+before_script:
+  # Export composer
+  - export PATH="$HOME/.composer/vendor/bin:$PATH"
+  # Install plugin with composer
+  - composer install --no-progress
+
+# Run tests
+script:
+  # Run just unit tests first -- if they fail we never spend the time building the environment for integration tests
+  - composer unit-tests
+  # Install full test environment using composer script
+  ##- composer wp-install
+  # Run integration tests
+  ##- composer wp-tests
+# IF tests passed run coverage and sniffs
+after_sucess:
+  # Run coverage
+  - vendor/bin/phpunit --coverage-clover=coverage.xml
+  # Report to codecov
+  ##- bash <(curl -s https://codecov.io/bash) CODECOV_KEY
