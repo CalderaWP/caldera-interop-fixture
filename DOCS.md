@@ -4,9 +4,9 @@ This is an example of how a Caldera Forms integration will work once the [calder
 
 ## Making Your Own Integration
 * Copy this repo.
-* Find and replace `caldera-interop-extension-example` with your integration's slug.
+* Find and replace `caldera-interop-fixture` with your integration's slug.
 * Find and replace `calderawp` with your vendor slug.
-* Find and replace `ExampleInteropExtension` with your integration's root namespace.
+* Find and replace `InteropFixture` with your integration's root namespace.
 * Write a bash script or something to automate that.
 
 ## Interoperable Sets
@@ -77,28 +77,28 @@ This allows requesting entities from the container.
 
 A blank entity:
 ```php
-use calderawp\ExampleInteropExtension\Entities\Hello;
+use calderawp\InteropFixture\Entities\Hello;
 $model = $app->getFactory()->entity(Hello::getType() );
 ```
 
 An entity from an array:
 
  ```php
- use calderawp\ExampleInteropExtension\Entities\Hello;
+ use calderawp\InteropFixture\Entities\Hello;
  $model = $app->getFactory()->entity(Hello::getType(), [ 'who' => 'Mike' ] );
  ```
 
 An entity from a [standard HTTP request](https://github.com/php-fig/http-message/blob/master/src/RequestInterface.php):
 
  ```php
- use calderawp\ExampleInteropExtension\Entities\Hello;
+ use calderawp\InteropFixture\Entities\Hello;
  use Psr\Http\Message\RequestInterface;
  $model = $app->getFactory()->entity(Hello::getType(), $request );
  ```
  
  Create empty collection and add entity:
  ```php
- use calderawp\ExampleInteropExtension\Entities\Hello;
+ use calderawp\InteropFixture\Entities\Hello;
 $collection = $this->getFactory()->collection($entity->getTheType() );
 $collection->addHello( $entity );
 ```

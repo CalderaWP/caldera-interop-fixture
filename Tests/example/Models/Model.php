@@ -1,8 +1,8 @@
 <?php
 
-namespace calderawp\InteropFixture\Models;
+namespace calderawp\HelloExtension\Models;
 
-use calderawp\InteropFixture\Traits\HelloType;
+use calderawp\HelloExtension\Traits\HelloType;
 
 abstract class Model extends \calderawp\interop\Models\Model
 {

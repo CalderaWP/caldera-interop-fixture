@@ -1,9 +1,9 @@
 <?php
 
 
-namespace calderawp\ExampleInteropExtension;
+namespace calderawp\HelloExtension;
 
-use calderawp\ExampleInteropExtension\Traits\HelloType;
+use calderawp\HelloExtension\Traits\HelloType;
 use calderawp\interop\Interfaces\CalderaFormsApp;
 use calderawp\interop\Interfaces\ProvidesInteropService;
 
@@ -26,11 +26,11 @@ class HelloInteropService implements ProvidesInteropService
 				//Alias that identifies these objects in container
 				$this->getAlias(),
 				//Name of entity class
-				\calderawp\ExampleInteropExtension\Entities\Hello::class,
+				\calderawp\HelloExtension\Entities\Hello::class,
 				//Name of model class
-				\calderawp\ExampleInteropExtension\Models\Hello::class,
+				\calderawp\HelloExtension\Models\Hello::class,
 				//Name of collection class
-				\calderawp\ExampleInteropExtension\Collections\Hellos::class
+				\calderawp\HelloExtension\Collections\Hellos::class
 			);
 
 		return $this;

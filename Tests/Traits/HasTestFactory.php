@@ -1,10 +1,10 @@
 <?php
 
 
-namespace calderawp\ExampleInteropExtension\Tests\Traits;
+namespace calderawp\InteropFixture\Tests\Traits;
 
-use calderawp\ExampleInteropExtension\Entities\Entity;
-use calderawp\ExampleInteropExtension\Entities\Hello;
+use calderawp\InteropFixture\Entities\Entity;
+use calderawp\InteropFixture\Entities\Hello;
 
 trait HasTestFactory
 {

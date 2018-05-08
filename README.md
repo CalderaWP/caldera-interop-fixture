@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/calderawp/caldera-interop-extension-example.svg?branch=master)](https://travis-ci.org/calderawp/caldera-interop-extension-example)
+[![Build Status](https://travis-ci.org/calderawp/caldera-interop-fixture.svg?branch=master)](https://travis-ci.org/calderawp/caldera-interop-fixture)
 
 >This is an example of how a Caldera Forms integration will work soon. See the [Docs](DOCS.md) for information on how to use this.
 
@@ -10,7 +10,7 @@
 * Reason 2:
 
 ## Install
-`composer require calderawp/caldera-interop-extension-example`
+`composer require calderawp/caldera-interop-fixture`
 
 ## Requires
 * PHP 7.1
@@ -27,8 +27,8 @@ EXPERIMENTAL/ALPHA/BETA/ETC
 ### Install
 Requires git and Composer
 
-* `git clone git@github.com:calderawp/caldera-interop-extension-example.git`
-* `cd caldera-interop-extension-example`
+* `git clone git@github.com:calderawp/caldera-interop-fixture.git`
+* `cd caldera-interop-fixture`
 * `composer install`
 
 Coding Standard: Caldera (psr2 with tabs). Enforces using phpcs.

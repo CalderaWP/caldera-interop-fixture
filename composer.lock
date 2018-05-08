@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c13992f22ce4bfe18584358763c45228",
+    "content-hash": "a58cc8b72c257895eb805c4e528fab6a",
     "packages": [
         {
             "name": "calderawp/caldera-containers",
-            "version": "0.1.1",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CalderaWP/caldera-containers.git",
-                "reference": "66eb851926e6872b4e8f5d5fdf7a1b80ebd43fba"
+                "reference": "32ba0d0e851cbdaaf733f78902bfcba17de7e4b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CalderaWP/caldera-containers/zipball/66eb851926e6872b4e8f5d5fdf7a1b80ebd43fba",
-                "reference": "66eb851926e6872b4e8f5d5fdf7a1b80ebd43fba",
+                "url": "https://api.github.com/repos/CalderaWP/caldera-containers/zipball/32ba0d0e851cbdaaf733f78902bfcba17de7e4b2",
+                "reference": "32ba0d0e851cbdaaf733f78902bfcba17de7e4b2",
                 "shasum": ""
             },
             "require": {
@@ -46,24 +46,24 @@
                     "email": "josh@calderawp.com"
                 }
             ],
-            "time": "2018-04-05T19:34:50+00:00"
+            "time": "2018-05-05T22:43:14+00:00"
         },
         {
             "name": "calderawp/caldera-interop",
-            "version": "0.7.2",
+            "version": "dev-processor",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CalderaWP/caldera-interop.git",
-                "reference": "c0293f558e970a8eb5ebf78a18896ed30406e1bb"
+                "reference": "bf46885c2cb7f9179a0cc4e49456078de9ba4aef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CalderaWP/caldera-interop/zipball/c0293f558e970a8eb5ebf78a18896ed30406e1bb",
-                "reference": "c0293f558e970a8eb5ebf78a18896ed30406e1bb",
+                "url": "https://api.github.com/repos/CalderaWP/caldera-interop/zipball/bf46885c2cb7f9179a0cc4e49456078de9ba4aef",
+                "reference": "bf46885c2cb7f9179a0cc4e49456078de9ba4aef",
                 "shasum": ""
             },
             "require": {
-                "calderawp/caldera-containers": "0.1.*",
+                "calderawp/caldera-containers": "^0.2",
                 "guzzlehttp/guzzle": "^6.3",
                 "php": "^5.6|^7.0",
                 "pimple/pimple": "^3.2",
@@ -90,7 +90,7 @@
                     "email": "josh@calderawp.com"
                 }
             ],
-            "time": "2018-04-05T19:40:34+00:00"
+            "time": "2018-05-08T19:18:37+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -690,57 +690,6 @@
                 "object graph"
             ],
             "time": "2017-10-19T19:58:43+00:00"
-        },
-        {
-            "name": "nikic/php-parser",
-            "version": "v4.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "e4a54fa90a5cd8e8dd3fb4099942681731c5cdd3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/e4a54fa90a5cd8e8dd3fb4099942681731c5cdd3",
-                "reference": "e4a54fa90a5cd8e8dd3fb4099942681731c5cdd3",
-                "shasum": ""
-            },
-            "require": {
-                "ext-tokenizer": "*",
-                "php": ">=7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^6.5 || ^7.0"
-            },
-            "bin": [
-                "bin/php-parse"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "PhpParser\\": "lib/PhpParser"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Nikita Popov"
-                }
-            ],
-            "description": "A PHP parser written in PHP",
-            "keywords": [
-                "parser",
-                "php"
-            ],
-            "time": "2018-03-25T17:35:16+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -2008,54 +1957,6 @@
             "time": "2016-10-03T07:35:21+00:00"
         },
         {
-            "name": "spatie/phpunit-snapshot-assertions",
-            "version": "1.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/phpunit-snapshot-assertions.git",
-                "reference": "bb8f919800cf753da12bd12702d975d10aa55824"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/phpunit-snapshot-assertions/zipball/bb8f919800cf753da12bd12702d975d10aa55824",
-                "reference": "bb8f919800cf753da12bd12702d975d10aa55824",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.0",
-                "phpunit/phpunit": "~6.0.5|^7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\Snapshots\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian De Deyne",
-                    "email": "sebastian@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Snapshot testing with PHPUnit",
-            "homepage": "https://github.com/spatie/phpunit-snapshot-assertions",
-            "keywords": [
-                "assert",
-                "phpunit",
-                "phpunit-snapshot-assertions",
-                "snapshot",
-                "spatie",
-                "testing"
-            ],
-            "time": "2018-03-15T10:21:29+00:00"
-        },
-        {
             "name": "squizlabs/php_codesniffer",
             "version": "3.2.3",
             "source": {
@@ -2199,7 +2100,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "calderawp/caldera-interop": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

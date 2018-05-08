@@ -1,5 +1,5 @@
 {
-  "name": "calderawp/caldera-interop-extension-example",
+  "name": "calderawp/caldera-interop-fixture",
   "license": "GPL-2.0",
   "authors": [
     {
@@ -9,11 +9,11 @@
   ],
   "require": {
     "php": "^7.1",
-    "calderawp/caldera-interop": "*"
+    "calderawp/caldera-interop": "dev-processor"
   },
   "autoload": {
     "psr-4": {
-      "calderawp\\ExampleInteropExtension\\": "src"
+      "calderawp\\InteropFixture\\": "src"
     }
   },
   "scripts" : {
@@ -26,7 +26,8 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "calderawp\\ExampleInteropExtension\\Tests\\": "Tests/"
+      "calderawp\\InteropFixture\\Tests\\": "Tests/",
+      "calderawp\\HelloExtension\\": "Tests/example"
 
     }
   },

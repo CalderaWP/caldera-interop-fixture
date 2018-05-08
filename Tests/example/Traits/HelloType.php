@@ -1,7 +1,7 @@
 <?php
 
 
-namespace calderawp\ExampleInteropExtension\Traits;
+namespace calderawp\HelloExtension\Traits;
 
 /**
  * Trait for entity/model/collection to use to identify common type.

@@ -1,9 +1,9 @@
 <?php
 
 
-namespace calderawp\ExampleInteropExtension\Collections;
+namespace calderawp\HelloExtension\Collections;
 
-use calderawp\ExampleInteropExtension\Entities\Hello;
+use calderawp\HelloExtension\Entities\Hello;
 
 class Hellos extends Collection
 {

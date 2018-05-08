@@ -1,12 +1,12 @@
 <?php
 
 
-namespace calderawp\ExampleInteropExtension\Tests\Unit;
+namespace calderawp\InteropFixture\Tests\Unit;
 
-use calderawp\ExampleInteropExtension\Collections\Hellos;
-use calderawp\ExampleInteropExtension\Entities\Hello;
-use calderawp\ExampleInteropExtension\HelloInteropService;
-use calderawp\ExampleInteropExtension\Models\Hello as HelloModel;
+use calderawp\HelloExtension\Entities\Hello;
+use calderawp\HelloExtension\Collections\Hellos as HelloCollection;
+use calderawp\HelloExtension\HelloInteropService;
+use calderawp\HelloExtension\Models\Hello as HelloModel;
 
 class HelloInteropTest extends UnitTestCase
 {
@@ -54,7 +54,7 @@ class HelloInteropTest extends UnitTestCase
 	{
 		$fixture = $this->createFixture();
 		$entityArrays = $fixture->getEntityArrays();
-		$collection = new Hellos();
+		$collection = new HelloCollection();
 		foreach ($entityArrays as $setIndex => $entityArray) {
 			$entity = Hello::fromArray($entityArray);
 			$entity->setId($entityArray['id']);

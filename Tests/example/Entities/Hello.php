@@ -1,7 +1,7 @@
 <?php
-namespace  calderawp\ExampleInteropExtension\Entities;
+namespace  calderawp\HelloExtension\Entities;
 
-use calderawp\ExampleInteropExtension\Traits\HelloType;
+use calderawp\HelloExtension\Traits\HelloType;
 use calderawp\interop\Traits\CanCastAndValidateProps;
 
 class Hello extends Entity
