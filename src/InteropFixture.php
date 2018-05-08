@@ -21,31 +21,67 @@ class InteropFixture
 	protected $propNames = [];
 
 	/**
+	 * @var PropData
+	 */
+	protected $propDataOriginal;
+
+	/**
 	 * InteropFixture constructor.
 	 * @param PropData $propData PropData entity
 	 */
 	public function __construct(PropData  $propData)
 	{
+		//Leave copy to allow resetting from
+		$this->propDataOriginal = $propData;
 		//Shimmed back to an array beacuse it is not array like or itterable yet.
 		$this->propData = $propData->toArray();
 		$this->setProps();
 	}
 
+	/**
+	 * Reset entity
+	 *
+	 * @return InteropFixture
+	 */
+	public function reset() : InteropFixture
+	{
+		$this->propData = $this->propDataOriginal->toArray();
+		return $this;
+	}
+
+	/**
+	 * Get an array of what the entities should transform to arrays as
+	 *
+	 * @return array
+	 */
 	public function getEntityExpects(): array
 	{
 		return $this->entityExpects;
 	}
 
+	/**
+	 * Get entities arrays to use with factory for tests
+	 *
+	 * @return array
+	 */
 	public function getEntityArrays(): array
 	{
 		return $this->entityArrays;
 	}
 
+	/**
+	 * Get the names of the entities we are testing
+	 *
+	 * @return array
+	 */
 	public function getPropNames() : array
 	{
 		return $this->propNames;
 	}
 
+	/**
+	 * Setup the object
+	 */
 	private function setProps()
 	{
 		$this->propNames = array_keys($this->propData);

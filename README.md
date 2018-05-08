@@ -1,11 +1,10 @@
 [![Build Status](https://travis-ci.org/calderawp/caldera-interop-fixture.svg?branch=master)](https://travis-ci.org/calderawp/caldera-interop-fixture)
 
-
+Auto-magic tests for [caldera-interop Interoperable Servies](https://github.com/CalderaWP/caldera-interop/blob/processor/src/Service/README.md)
 ## Why?
-@TODO Explain why this is needed
-
-* Reason 1:
-* Reason 2:
+* Every interoperable set MUST transform between array/entitiy/model/collection/HTTP message/ etc. consistently.
+* We can only trust that claim if we test a reasonable approximation of all of the possible combination of values for an entity's properties.
+* Writing all those tests takes to long.
 
 ## Install
 `composer require calderawp/caldera-interop-fixture`
@@ -16,10 +15,83 @@
 ## Status
 BETA
 ## Usage
-@TODO Examples
+This testing component is designed to be used with interoperable sets that are provided to the container using a `InteropProvider`. This component is comprised of two parts.
 
+### Fixture and Prop Description
+The `InteropFixture` class takes an array-like set of data `PropData` that describes the properties and possible values of an entity. The `PropData` is the least auto-magic part of this process.
+
+
+#### PropData
+For each property, we provide that property's name and an array of values. For example, to add a `xpLevel` prop:
+ 
+ ```php
+
+$propData = new PropData();
+$propData->testProps = [
+    'xpLevel' => [
+        'values' => []
+    ]
+];
+```
+ 
+The `values` index collects arrays that provides an input value and an expected output value. For example, to test that the absolute value of our property is always returned:
+
+```php
+[
+    'value' => -10,
+    'expect' => 10
+],
+
+```
+
+Completer example:
+ 
+ ```php
+
+$propData = new PropData();
+$propData->testProps = [
+    'xpLevel' => [
+        'values' => [
+            [
+                'value' => -10,
+                'expect' => 10
+            ],
+            [
+                'value' => 10,
+                'expect' => 10
+            ],
+        ]
+    ],
+    'otherLevel' => [
+            'values' => [
+                [
+                    'value' => 10,
+                    'expect' => 10
+                ],
+                [
+                    'value' => 10,
+                    'expect' => 10
+                ],
+            ]
+        ]
+];
+```
+
+#### `InteropFixture`
+```php
+use calderawp\InteropFixture\Entities\PropData;
+use calderawp\InteropFixture\InteropFixture;
+$fixture = new InteropFixture($propData);
+```
+
+
+### Using In Tests
+
+
+### Complete Example
 
 ## Development
+
 
 ### Install
 Requires git and Composer
