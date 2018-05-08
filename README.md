@@ -88,8 +88,43 @@ $fixture = new InteropFixture($propData);
 ### Using In Tests
 
 
-### Complete Example
+```php
+use calderawp\HelloExtension\HelloInteropService;
+use calderawp\interop\CalderaForms;
+use calderawp\interop\Interfaces\CalderaFormsApp;
+use calderawp\InteropFixture\Entities\PropData;
+/**
+ * Class HelloInteropTest
+ *
+ * Test the example Hello interop binding
+ */
+class MyInteropTest extends UnitTestCase
+{
+	//Make fixture tests available
+	use TestsInterops;
 
+
+	public function testInterop()
+	{
+		//This provides 64 assertions for a set with two properties :)
+		$this->checkFixture(
+			new InteropFixture(PropData::fromArray([
+				//array like examples above
+			])),
+			//The interoperable service provider for this set
+			new SomeService(),
+			//main app
+			CalderaForms::factory()
+		);
+	}
+
+
+}
+```
+
+
+### Complete Example
+See tests
 ## Development
 
 

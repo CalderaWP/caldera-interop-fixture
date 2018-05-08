@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="688dbd9e-8148-4f2d-b4a0-c6ae41c2c791" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/Unit/HelloInteropTest.php" afterPath="$PROJECT_DIR$/Tests/Unit/HelloInteropTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tests/example/HelloInteropService.php" afterPath="$PROJECT_DIR$/Tests/example/HelloInteropService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/InteropFixture.php" afterPath="$PROJECT_DIR$/src/InteropFixture.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Traits/TestsInterops.php" afterPath="$PROJECT_DIR$/src/Traits/TestsInterops.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,48 +16,13 @@
     <splitter split-orientation="horizontal" split-proportion="0.42785355">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="PropData.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="PropData.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Entities/PropData.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="285">
                   <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="18" />
                   <folding>
                     <element signature="e#54#107#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HasTestFactory.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Tests/Traits/HasTestFactory.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="464">
-                  <caret line="38" column="43" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="43" />
-                  <folding>
-                    <element signature="e#58#111#0#PHP" expanded="true" />
-                    <element signature="e#916#1595#0#PHP" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="PropDataTest.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Tests/Unit/PropDataTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TestsInterops.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Traits/TestsInterops.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="247">
-                  <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-                  <folding>
-                    <element signature="e#52#101#0#PHP" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -111,43 +72,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HelloInteropService.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Tests/example/HelloInteropService.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="67">
-                  <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#45#91#0#PHP" expanded="true" />
-                    <marker date="1525815164151" expanded="true" signature="252:396" ph=" Class HelloInteropService ..." />
-                    <marker date="1525815164151" expanded="true" signature="448:1018" ph="{...}" />
-                    <marker date="1525815164151" expanded="true" signature="549:644" ph="{...}" />
-                    <marker date="1525815164151" expanded="true" signature="703:767" ph="{...}" />
-                    <marker date="1525815164151" expanded="true" signature="824:886" ph="{...}" />
-                    <marker date="1525815164151" expanded="true" signature="948:1016" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Tests/README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="FIRST">
-                  <first_editor relative-caret-position="0">
-                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="FIRST">
-                  <first_editor relative-caret-position="561">
-                    <caret line="90" column="20" lean-forward="false" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
+                  <first_editor relative-caret-position="351">
+                    <caret line="113" column="61" lean-forward="true" selection-start-line="113" selection-start-column="61" selection-end-line="113" selection-end-column="61" />
                     <folding />
                   </first_editor>
                   <second_editor />
@@ -165,14 +95,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HelloInteropTest.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="HelloInteropTest.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Tests/Unit/HelloInteropTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="539">
-                  <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#56#100#0#PHP" expanded="true" />
-                  </folding>
+                <state relative-caret-position="75">
+                  <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -198,6 +126,7 @@
       <find>$this-&gt;validated[]</find>
       <find>caldera-interop-extension-example</find>
       <find>ExampleInteropExtension</find>
+      <find>check</find>
     </findStrings>
     <replaceStrings>
       <replace>ExampleInteropExtension</replace>
@@ -270,9 +199,9 @@
         <option value="$PROJECT_DIR$/vendor/calderawp/caldera-interop/src/Providers/FormInteroperableProvider.php" />
         <option value="$PROJECT_DIR$/src/InteropFixture.php" />
         <option value="$PROJECT_DIR$/Tests/example/HelloInteropService.php" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/Tests/Unit/HelloInteropTest.php" />
         <option value="$PROJECT_DIR$/src/Traits/TestsInterops.php" />
+        <option value="$PROJECT_DIR$/Tests/Unit/HelloInteropTest.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -350,12 +279,6 @@
               <item name="caldera-interop-fixture" type="b2602c69:ProjectViewProjectNode" />
               <item name="caldera-interop-fixture" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="example" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="caldera-interop-fixture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="caldera-interop-fixture" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Traits" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -416,16 +339,15 @@
       <updated>1525715363876</updated>
       <workItem from="1525715365004" duration="938000" />
       <workItem from="1525716369423" duration="25941000" />
-      <workItem from="1525805024069" duration="7569000" />
+      <workItem from="1525805024069" duration="8098000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34448000" />
+    <option name="totallyTimeSpent" value="34977000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="144" y="22" width="1776" height="1042" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19665514" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -435,7 +357,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26715946" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="147" y="112" width="720" height="1006" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26715946" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="147" y="112" width="720" height="1006" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -650,17 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/Traits/HasTestFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="38" column="43" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="43" />
-          <folding>
-            <element signature="e#58#111#0#PHP" expanded="true" />
-            <element signature="e#916#1595#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/calderawp/caldera-interop/src/Traits/CanCastAndValidateProps.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -673,14 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/Unit/PropDataTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -725,17 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Traits/PropDataType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -752,29 +644,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/Tests/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="561">
-            <caret line="90" column="20" lean-forward="false" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Traits/TestsInterops.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+          <folding>
+            <element signature="e#52#101#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/example/HelloInteropService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
+        <state relative-caret-position="68">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#45#91#0#PHP" expanded="true" />
-            <marker date="1525815164151" expanded="true" signature="252:396" ph=" Class HelloInteropService ..." />
-            <marker date="1525815164151" expanded="true" signature="448:1018" ph="{...}" />
-            <marker date="1525815164151" expanded="true" signature="549:644" ph="{...}" />
-            <marker date="1525815164151" expanded="true" signature="703:767" ph="{...}" />
-            <marker date="1525815164151" expanded="true" signature="824:886" ph="{...}" />
-            <marker date="1525815164151" expanded="true" signature="948:1016" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Unit/PropDataTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Traits/HasTestFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="38" column="43" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="43" />
+          <folding>
+            <element signature="e#58#111#0#PHP" expanded="true" />
+            <element signature="e#916#1595#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -791,21 +706,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/Unit/HelloInteropTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="e#56#100#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Traits/TestsInterops.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="50" column="38" lean-forward="false" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-          <folding>
-            <element signature="e#52#101#0#PHP" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="351">
+            <caret line="113" column="61" lean-forward="true" selection-start-line="113" selection-start-column="61" selection-end-line="113" selection-end-column="61" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
